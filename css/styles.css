@@ -1,0 +1,21 @@
+/* Styles pour l'image redimensionnable */
+
+/* Styles pour l'image agrandie */
+img:hover {
+    transform: scale(2); /* Zoomer l'image par un facteur de 1.5 */
+    transition: transform 0.3s ease-in-out; /* Ajouter une transition pour une animation fluide */
+    border: 2px solid #f00;
+}
+
+img {
+    transition: transform 0.3s ease-in-out; /* Ajouter une transition pour une animation fluide */
+    max-height: 100vh;
+}
+
+.sectionCV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    height: 100vh;
+}
