@@ -8,33 +8,43 @@
 </head>
 <body>
 
-<!-- En-tête de la page -->
 <header>
-    <h1>Porfolio de Téo Moerel</h1>
-    <nav>
+    <nav class="ccsticky-nav">
         <ul>
-            <li><a href="#imageCV">CV</a></li>
-            <li><a href="#">Projets</a></li>
+            <li><a href="#sectionCV">CV</a></li>
+            <li><a href="#sectionProjets">Projets</a>
+                <ul>
+                    <li><a href="#projetsIUT">IUT</a></li>
+                    <li><a href="#projetsPerso">Personnels</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
 
-<!-- Contenu principal de la page -->
+
 <main>
-    <section class="sectionCV">
+    <h1>Porfolio de Téo Moerel</h1>
+    <p>Ceci est mon porfolio sous forme de site avec mon CV et tous mes projets auquels j'ai participés jusqu'à maintenant. J'actualise ce porfolio et mon cv souvent donc il se peut que si vous actualisez cette page, le site changera ! (:</p>
+    <section id="sectionCV">
         <h2>Curiculum Vitae</h2>
-        <a href="#imageCV">
-            <img id="imageCV" src="./images/MOERELTeoCVVersionFinale-2-1.png" alt="Image de mon CV" width="331">
-        </a>
+        <div class="divClassCV">
+            <a href="#imageCV">
+                <img id="imageCV" src="./images/MOERELTeoCVVersionFinaleFinito.png" alt="Image de mon CV" width="331">
+            </a>
+        </div>
     </section>
 
-    <section>
-        <h2>Section 2</h2>
-        <p>Contenu de la section 2.</p>
+    <section id="sectionProjets">
+        <h2>Mes Projets</h2>
+        <h3 id="projetsIUT">Projets IUT</h3>
+        <p>Projet de la roulette à inclure ici</p>
+        <h3 id="projetsPerso">Projets personnels</h3>
+        <h4>La colère des dieux</h4>
+        <p>Ce projet est un jeu sur lequel je travaille quand j'ai le temps et l'envie. Je le fais sur Unity et je n'ai pas les données du jeu pour le moment mais lorsque je peux, je mettrais petit à petit mon avancement !</p>
     </section>
 </main>
 
-<!-- Pied de page de la page -->
 <footer>
     <p>&copy; 2023 Porfolio de Téo Moerel. Tous droits réservés.</p>
 </footer>

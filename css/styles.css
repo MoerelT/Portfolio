@@ -1,6 +1,3 @@
-/* Styles pour l'image redimensionnable */
-
-/* Styles pour l'image agrandie */
 img:hover {
     transform: scale(2); /* Zoomer l'image par un facteur de 1.5 */
     transition: transform 0.3s ease-in-out; /* Ajouter une transition pour une animation fluide */
@@ -12,10 +9,91 @@ img {
     max-height: 100vh;
 }
 
-.sectionCV {
+.divClassCV {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid gray;
+    border: 2px solid rgb(128, 128, 128);
+    height: 50vh;
+}
+
+.ccsticky-nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #139ed8;
+    z-index: 1000; /* Assure que le header est au-dessus du contenu de la page */
+}
+
+.ccsticky-nav ul {
+    padding: 20px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.ccsticky-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.ccsticky-nav ul li a {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.ccsticky-nav ul li a:hover {
+    color: #34495E;
+}
+
+.ccsticky-nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+    background: #139ed8;
+}
+
+.ccsticky-nav ul li:hover ul {
+    display: block;
+}
+
+.ccsticky-nav ul li ul li {
+    display: block;
+    text-align: left;
+}
+
+.ccsticky-nav ul li ul li a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.ccsticky-nav ul li ul li a:hover {
+    color: #34495E;
+}
+
+section {
+    width: 100%;
     height: 100vh;
+    background: #fff;
+    text-align: center;
+    /*margin-top: 60px;*/
+    padding: 50px 0 0;
+}
+
+h3 {
+    padding: 50px 0 0;
 }
