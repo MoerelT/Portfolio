@@ -1,11 +1,12 @@
 img:hover {
-    transform: scale(2); /* Zoomer l'image par un facteur de 1.5 */
-    transition: transform 0.3s ease-in-out; /* Ajouter une transition pour une animation fluide */
+    transform: scale(1.9);
+    transition: transform 0.3s ease-in-out;
     border: 2px solid #f00;
+    padding-top: 30px;
 }
 
 img {
-    transition: transform 0.3s ease-in-out; /* Ajouter une transition pour une animation fluide */
+    transition: transform 0.3s ease-in-out;
     max-height: 100vh;
 }
 
@@ -24,7 +25,7 @@ img {
     top: 0;
     left: 0;
     background: #139ed8;
-    z-index: 1000; /* Assure que le header est au-dessus du contenu de la page */
+    z-index: 1000;
 }
 
 .ccsticky-nav ul {
@@ -90,10 +91,13 @@ section {
     height: 100vh;
     background: #fff;
     text-align: center;
-    /*margin-top: 60px;*/
     padding: 50px 0 0;
 }
 
 h3 {
+    padding: 50px 0 0;
+}
+
+main {
     padding: 50px 0 0;
 }
