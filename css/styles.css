@@ -1,4 +1,4 @@
-img:hover {
+.divClassCV img:hover {
     transform: scale(1.9);
     transition: transform 0.3s ease-in-out;
     border: 2px solid #f00;
@@ -100,4 +100,8 @@ h3 {
 
 main {
     padding: 50px 0 0;
+}
+
+p {
+    text-align: justify;
 }
